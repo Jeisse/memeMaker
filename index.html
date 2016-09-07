@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>meme maker</title>
+	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>MemeMaker</h1>
+		<hr>
+
+		<div id="box1">
+			<h2>Choose Image:</h2>
+			<input id="file" type="file">
+			<button class="btn"><a href="">Clear</a></button>
+			<br>
+		</div>
+
+		<div id="box2" style="display: none;">
+			<h2>Write Top & Bottom Lines:</h2>
+			<input id="topline" placeholder="TOP LINE" class="form-control">
+			<input id="bottomline" placeholder="BOTTOM LINE" class="form-control">
+			<br>
+			<button class="btn center-block"><a href="#" class="btn" id="downloadLink" download>Download Meme!</a></button>		
+			<br>
+			<canvas id="canvas" width="0" height="0" class="img-thumbnail"></canvas>
+			<br><br>
+			
+		</div>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>
